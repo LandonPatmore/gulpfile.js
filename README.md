@@ -1,5 +1,5 @@
-# Simple-Gulp-File
-Simple Gulp File to get you started with using gulp, sass, browser-sync, and auto-prefixer all together
+# gulpfile.js
+simple gulpfile to get you started with using gulp, sass, browser-sync, and auto-prefixer all together
 
 ### To get started
 Clone this repo, download it, or copy the gulpfile.js into your project structure.  **Remember** to put it in the root of your directory, or it won't work.
