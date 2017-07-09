@@ -26,7 +26,7 @@ If you want to hit the ground running quick, and you have a brand spanking new p
 |____app
 | |____css
 | |____html
-| |____sass
+| |____scss
 ```
 
 - This is the way the gulp file is currently set up to work.
