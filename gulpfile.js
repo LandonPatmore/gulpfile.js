@@ -12,21 +12,21 @@ gulp.task("serve", ["sass"], function () {
 
     browserSync.init({
         server: {
-            baseDir: "app",
+            baseDir: "<DIRECTORY ALL FILES ARE IN, USE ./ IF STARTING FROM ROOT>",
             directory: true
         }
     });
 
-    gulp.watch("app/scss/*.scss", ["sass"]);
-    gulp.watch(["app/html/*.html", "app/js/*.js"]).on("change", browserSync.reload);
+    gulp.watch("<PATH TO DIRECTORY WITH SCSS FILES>/*.scss", ["sass"]);
+    gulp.watch(["<PATH TO DIRECTORY WITH HTML FILES>/*.html", "<PATH TO DIRECTORY WITH JS FILES>/*.js"]).on("change", browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task("sass", function () {
-    return gulp.src("app/scss/*.scss")
+    return gulp.src("<PATH TO DIRECTORY WITH SCSS FILES>/*.scss")
         .pipe(sass())
         .pipe(autoprefixer(autoprefixerOptions))
-        .pipe(gulp.dest("app/css"))
+        .pipe(gulp.dest("<PATH TO DIRECTORY WITH CSS FILES>/css"))
         .pipe(browserSync.stream());
 });
 
